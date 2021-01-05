@@ -1,0 +1,160 @@
+/***** BASE STYLES *****/
+body {
+    background-color: #DAF7F6;
+    color: #3B3B3B;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/***** HEADER *****/
+header {
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+h1 {
+    color: #F16059;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 40px 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+header img {
+    margin-right: 16px;
+}
+
+/***** MAIN SECTION *****/
+main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/***** RECIPE CARDS *****/
+.card {
+    margin: 25px 0;
+    overflow: auto;
+}
+/***** Check the OVERFLOW property here! I am not sure what instruction 8 means by "clear the floats for the "card" parent class using the "overflow" property. I wonder if this needs its own spot.*****/
+.image {
+    float: left;
+    height: 550px;
+    width: 500px;
+}
+
+/***** RECIPE *****/
+
+.recipe {
+    background: #FFFFFF;
+    box-sizing: border-box;
+    float: left;
+    height: 550px;
+    padding: 20px;
+    width: 500px;
+}
+
+/***** IMAGES *****/
+#cookies .image {
+    background-image: url("../img/gluten-free-sugar-cookies.jpg");
+    background-size: cover;
+}
+
+#pesto .image {
+    background-image: url("../img/nut-free-pesto.jpg");
+    background-size: cover;
+}
+
+#salad .image {
+    background-image: url("../img/watermelon-salad.jpg");
+    background-size: cover;
+}
+
+/***** INDIVIDUAL CARD STYLING *****/
+.recipe h2 {
+    color: #F16059;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px; 
+    font-weight: bold;
+    line-height: 10px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+/***** RECIPE TIMES *****/
+/***** I'm confused about instruction 4 "add selectors for the div with a class of time." Does it just mean this below? *****/
+.time {
+    border: solid 1px #3B3B3B;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.time div {
+    box-sizing: border-box;
+    float: left;
+    padding-left: 6px;
+    text-transform: uppercase;
+    width: 33.3333%;
+}
+
+.time .cook {
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #3B3B3B;
+}
+
+.time img {
+    height: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 15px;
+}
+
+.time-details {
+    display: inline-block;
+}
+
+.time strong {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.columns {
+    overflow: auto;
+}
+
+.directions {
+    float: left;
+    width: 240px;
+}
+
+.ingredients {
+    float: left;
+    margin-right: 15px;
+    width: 205px;
+}
+
+/***** To achieve the same border line above and below the Ingredients & Directions here, you could also write it as border-width: 1px 0; AND border-style: solid; AND border-color: etc.*****/
+.recipe h3 {
+    border-bottom: 1px solid #3B3B3B;
+    border-top: 1px solid #3B3B3B;
+    color: #F16059;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px;
+    text-transform: uppercase;
+}
+
+.ingredients ul {
+    line-height: 24px;
+    list-style-type: square;
+    padding-left: 15px;
+}
+
+.directions ol {
+    line-height: 24px;
+    padding-left: 15px;
+}
